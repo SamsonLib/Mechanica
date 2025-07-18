@@ -8,7 +8,7 @@ namespace Constants {
     const float SPEED = 600.0f;
     const int TARGET_FPS = 180;
     const bool IS_DEBUG = false;
-    const char* WINDOW_TITLE = "Raylib";
+    const char* WINDOW_TITLE = "Mechanica";
     const char* WORLD_FILE = "world.dat";
     const int SIDEBAR_WIDTH = 80;
     const int CURSOR_OUTLINE_THICKNESS = 3;
