@@ -20,7 +20,7 @@ struct Cursor {
             Theme::CURSOR_OUTLINE
         );
 
-        if (Constants::IS_DEBUG) {
+        if (State::IS_DEBUG) {
 
             const char* text = (std::to_string(x) + "," + std::to_string(y)).c_str();
             int textWidth = MeasureText(text, Constants::FONT_SIZE);
@@ -36,7 +36,7 @@ public:
     void draw(int bx, int by, const Vector2 &mouse, const Camera2D &camera, const Sidebar* sidebar) const {
         sidebar->draw();
         cursor.draw(bx, by, camera.target.x, camera.target.y);
-        if (!Constants::IS_DEBUG)
+        if (!State::IS_DEBUG)
             return;
 
         int y = 10;

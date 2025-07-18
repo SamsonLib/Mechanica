@@ -4,6 +4,7 @@
 
 #include "Block.h"
 #include "Constants.h"
+#include "States.h"
 
 struct Chunk {
     static const int SIZE = Constants::CHUNK_SIZE;
@@ -30,7 +31,7 @@ struct Chunk {
                 }
             }
             
-        if (Constants::IS_DEBUG) {
+        if (State::IS_DEBUG) {
             // Draw border around the entire chunk
             int wx = x * Constants::CHUNK_SIZE * Constants::BLOCK_SIZE;
             int wy = y * Constants::CHUNK_SIZE * Constants::BLOCK_SIZE;

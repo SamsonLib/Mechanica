@@ -7,7 +7,6 @@ namespace Constants {
     const int SCREEN_HEIGHT = 720;
     const float SPEED = 600.0f;
     const int TARGET_FPS = 180;
-    const bool IS_DEBUG = false;
     const char* WINDOW_TITLE = "Mechanica";
     const char* WORLD_FILE = "world.dat";
     const int SIDEBAR_WIDTH = 80;

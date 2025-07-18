@@ -10,6 +10,7 @@
 #include "Block.h"
 #include "Chunk.h"
 #include "Constants.h"
+#include "States.h"
 #include "World.h"
 #include "Theme.h"
 #include "Hud.h"
@@ -38,6 +39,9 @@ int main() {
             camera.target.y -= Constants::SPEED * dt;
         if (IsKeyDown(KEY_S))
             camera.target.y += Constants::SPEED * dt;
+
+        if (IsKeyPressed(KEY_O))
+            State::IS_DEBUG = !State::IS_DEBUG;
 
         // Mouse input
         Vector2 mouse = GetScreenToWorld2D(GetMousePosition(), camera);
